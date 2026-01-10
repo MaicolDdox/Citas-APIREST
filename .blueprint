@@ -1,0 +1,6 @@
+created:
+    - database/factories/AppointmentFactory.php
+    - database/migrations/2026_01_10_231559_create_appointments_table.php
+    - app/Models/Appointment.php
+models:
+    Appointment: { user_id: 'id foreign', number: 'string:30 unique', scheduled_at: datetime, place: 'string:120', reason: 'text nullable', status: 'enum:pending,confirmed,cancelled,completed default:pending' }

@@ -1,0 +1,8 @@
+models:
+  Appointment:
+    user_id: id foreign
+    number: string:30 unique
+    scheduled_at: datetime
+    place: string:120
+    reason: text nullable
+    status: enum:pending,confirmed,cancelled,completed default:pending
