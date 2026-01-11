@@ -12,3 +12,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Orion::resource('appointments', AppointmentController::class);
 });
+
+Route::get('prueba-api', function(){
+    return 'prueba de api.php';
+});
